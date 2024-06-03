@@ -1,6 +1,7 @@
 import React from 'react';
+import data from '../data/ServicesData';
 import Card from '../components/Card';
-const Services = () => {
+const Service = () => {
   return (
     <>
       <div className="my-5">
@@ -10,7 +11,11 @@ const Services = () => {
         <div className="row">
           <div className="col-10 mx-auto">
             <div className="row gy-4">
-              <Card />
+              {data.map((val, index) => {
+                return (
+                  <Card key={index} imgsrc={val.imgsrc} title={val.title} />
+                );
+              })}
             </div>
           </div>
         </div>
@@ -19,4 +24,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Service;

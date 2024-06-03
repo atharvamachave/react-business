@@ -78,20 +78,28 @@
 }
 @-webkit-keyframes up-down {
   0% {
-    transform: translateY(10px);
+    transform: translate(30px);
   }
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-40px);
   }
 }
 
 @keyframes up-down {
   0% {
-    transform: translateY(10px);
+    transform: translateY(30px);
   }
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-40px);
   }
+}
+
+.custom-img {
+  height: 280px;
+}
+
+.col-md-4.col-10.mx-auto:last-child .custom-img {
+  height: 280px;
 }
 
 code {

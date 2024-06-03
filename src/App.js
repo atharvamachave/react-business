@@ -7,7 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Services from './pages/Service';
 import Navbar from './components/Navbar';
-
+import Footer from './components/Footer';
 const App = () => {
   return (
     <>
@@ -19,6 +19,7 @@ const App = () => {
         <Route exact path="/contact" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <Footer />
     </>
   );
 };
